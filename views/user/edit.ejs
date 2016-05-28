@@ -1,0 +1,11 @@
+<div class="container form-update">
+	<form action="/user/update/<%= user.id %>" method="POST" id="update">
+		<h2>Hey, Your editting a user... </h2>
+
+		<input value="<%= user.name %>" name="name" type="text" class="form-control" />
+		<input value="<%= user.username %>" name="username" type="text" class="form-control" />
+		<input value="<%= user.password %>" name="password" type="text" class="form-control" />
+		<input type="submit" value="Proceed" class="btn btn-lg btn-primary btn-block" />
+		<input type="hidden" name="_csrf" value="<%= _csrf %>" />
+	</form>
+</div>
